@@ -1,0 +1,385 @@
+# Python Operators
+#  Arithmetic Operators
+# Addition (+)
+a = 10
+b = 5
+result = a + b
+print(result)  
+# Subtraction (-)
+a = 10
+b = 5
+result = a - b
+print(result) 
+# Multiplication (*)
+a = 10
+b = 5
+result = a * b
+print(result) 
+# Division (/)
+a = 10
+b = 5
+result = a / b
+print(result)
+# Modulus (%)
+a = 10
+b = 3
+result = a % b
+print(result)
+# Exponentiation (**)
+a = 2
+b = 3
+result = a ** b
+print(result)
+# Floor Division (//)
+a = 10
+b = 3
+result = a // b
+print(result) 
+# Arithmetic operators in one code for single value 
+# Initial value
+a = 10
+b=5
+# Perform arithmetic operations
+addition = a + b          # Addition
+subtraction = a - b        # Subtraction
+multiplication = a * b     # Multiplication
+division = a / b          # Division
+modulus = a % b           # Modulus
+exponentiation = a ** b    # Exponentiation
+floor_division = a // b   # Floor Division
+
+# Print results
+print("Original value:", a)
+print("After addition:", addition)
+print("After subtraction:", subtraction)
+print("After multiplication:", multiplication)
+print("After division:", division)
+print("After modulus:", modulus)
+print("After exponentiation:", exponentiation)
+print("After floor division:", floor_division)
+#  Comparison Operators
+# Initial value
+a = 10
+
+# Perform comparison operations
+equal_to = (a == 10)         # Equal to
+not_equal_to = (a != 5)      # Not equal to
+greater_than = (a > 5)       # Greater than
+less_than = (a < 20)         # Less than
+greater_than_or_equal = (a >= 10)  # Greater than or equal to
+less_than_or_equal = (a <= 15)     # Less than or equal to
+
+# Print results
+print("Value:", a)
+print("Is equal to 10:", equal_to)
+print("Is not equal to 5:", not_equal_to)
+print("Is greater than 5:", greater_than)
+print("Is less than 20:", less_than)
+print("Is greater than or equal to 10:", greater_than_or_equal)
+print("Is less than or equal to 15:", less_than_or_equal)
+# Logical Operators
+# Initial value
+a = 10
+
+# Perform logical operations
+logical_and = (a > 5 and a < 15)    # True if both conditions are true
+logical_or = (a < 5 or a > 8)       # True if at least one condition is true
+logical_not = not(a == 10)          # True if the condition is false
+
+# Print results
+print("Value:", a)
+print("Is greater than 5 AND less than 15:", logical_and)
+print("Is less than 5 OR greater than 8:", logical_or)
+print("Is NOT equal to 10:", logical_not)
+# Assignment Operators
+# Initial value
+a = 10
+
+# Apply assignment operators
+a += 5        # Equivalent to a = a + 5
+print("After += 5:", a)
+a -= 3        # Equivalent to a = a - 3
+print("After -= 3:", a)  
+
+a *= 2        # Equivalent to a = a * 2
+print("After *= 2:", a) 
+
+a /= 4        # Equivalent to a = a / 4
+print("After /= 4:", a)  
+
+a %= 4        # Equivalent to a = a % 4
+print("After %= 4:", a) 
+
+a **= 3       # Equivalent to a = a ** 3
+print("After **= 3:", a)  
+
+a //= 2       # Equivalent to a = a // 2
+print("After //= 2:", a)
+# Bitwise Operators
+# Initial value
+a = 10  # Binary: 1010
+
+# Apply bitwise operators
+bitwise_and = a & 7          # Bitwise AND with 7 (Binary: 0111)
+bitwise_or = a | 4           # Bitwise OR with 4 (Binary: 0100)
+bitwise_xor = a ^ 5          # Bitwise XOR with 5 (Binary: 0101)
+bitwise_not = ~a             # Bitwise NOT (inverts all bits)
+bitwise_left_shift = a << 2  # Left shift by 2 positions (equivalent to multiplying by 4)
+bitwise_right_shift = a >> 1 # Right shift by 1 position (equivalent to dividing by 2)
+
+# Print results
+print("Original value (a):", a)
+print("Bitwise AND with 7:", bitwise_and)        # Output: 2  (Binary: 0010)
+print("Bitwise OR with 4:", bitwise_or)          # Output: 14 (Binary: 1110)
+print("Bitwise XOR with 5:", bitwise_xor)        # Output: 15 (Binary: 1111)
+print("Bitwise NOT:", bitwise_not)               # Output: -11 (Binary: Inverted 1010 becomes 0101)
+print("Left shift by 2 positions:", bitwise_left_shift)  # Output: 40 (Binary: 101000)
+print("Right shift by 1 position:", bitwise_right_shift) # Output: 5  (Binary: 0101)
+# Membership Operators 
+# in 
+a = [1, 2, 3, 4, 5]
+print(3 in a) 
+# not in
+a = [1, 2, 3, 4, 5]
+print(6 not in a) 
+# Identity Operators
+# is
+a = 5
+b = 5
+print(a is b)
+# is not
+a = 5
+b = 3
+print(a is not b)
+# Ternary Operator in Python
+a = 5
+b = 10
+
+# Using the ternary operator to find the maximum of two numbers
+max_value = a if a > b else b
+
+print(max_value)
+# Division Operators in Python
+# True Division (/)
+result = 10 / 3
+print(result)
+# Floor Division (//)
+result = 10 // 3
+print(result)  
+
+result = 10.0 // 3
+print(result)
+# Modulo (%)
+result = 10 % 3
+print(result) 
+# Division with divmod()
+quotient, remainder = divmod(10, 3)
+print(quotient)  
+print(remainder)
+# Any All in Python
+# any() Function
+numbers = [0, 1, 2, 3]
+result = any(numbers)
+print(result) 
+
+empty_list = []
+result = any(empty_list)
+print(result)   
+# all() Function
+numbers = [1, 2, 3, 4]
+result = all(numbers)
+print(result)  
+
+numbers_with_zero = [0, 1, 2, 3]
+result = all(numbers_with_zero)
+print(result)  
+
+empty_list = []
+result = all(empty_list)
+print(result) 
+# operator Functions in Python | Set 1
+import operator
+a = 10
+b = 3
+
+# Arithmetic operations
+print("Addition (a + b):", operator.add(a, b))         # 10 + 3 = 13
+print("Subtraction (a - b):", operator.sub(a, b))      # 10 - 3 = 7
+print("Multiplication (a * b):", operator.mul(a, b))   # 10 * 3 = 30
+print("True Division (a / b):", operator.truediv(a, b))# 10 / 3 = 3.3333...
+print("Floor Division (a // b):", operator.floordiv(a, b)) # 10 // 3 = 3
+print("Modulo (a % b):", operator.mod(a, b))           # 10 % 3 = 1
+print("Power (a ** b):", operator.pow(a, b))           # 10 ** 3 = 1000
+
+# Comparison operations
+print("Equal (a == b):", operator.eq(a, b))            # 10 == 3 -> False
+print("Not Equal (a != b):", operator.ne(a, b))        # 10 != 3 -> True
+print("Less Than (a < b):", operator.lt(a, b))         # 10 < 3 -> False
+print("Less Than or Equal (a <= b):", operator.le(a, b)) # 10 <= 3 -> False
+print("Greater Than (a > b):", operator.gt(a, b))      # 10 > 3 -> True
+print("Greater Than or Equal (a >= b):", operator.ge(a, b)) # 10 >= 3 -> True
+
+# Logical operations (bitwise)
+print("Bitwise AND (a & b):", operator.and_(a, b))     # 10 & 3 -> 2
+print("Bitwise OR (a | b):", operator.or_(a, b))       # 10 | 3 -> 11
+print("Bitwise NOT (~a):", operator.inv(a))            # ~10 -> -11
+
+# Sequence operations
+sequence_a = [1, 2, 3]
+sequence_b = [4, 5, 6]
+print("Concatenate sequences:", operator.concat(sequence_a, sequence_b)) # [1, 2, 3] + [4, 5, 6] -> [1, 2, 3, 4, 5, 6]
+print("Check contains (2 in sequence_a):", operator.contains(sequence_a, 2)) # 2 in [1, 2, 3] -> True
+
+# Item getter (get item at index 1)
+get_item = operator.itemgetter(1)
+print("Get item at index 1 from sequence_a:", get_item(sequence_a))
+# Operator Functions in Python | Set 2
+import operator
+
+# Sample data
+a = 10
+b = 3
+my_list = [1, 2, 3, 4, 5]
+my_dict = {'a': 1, 'b': 2}
+
+# Assignment operations
+operator.setitem(my_list, 1, 100)   # my_list[1] = 100
+print("Updated list after setitem:", my_list) 
+
+operator.delitem(my_list, 2)        # del my_list[2]
+print("Updated list after delitem:", my_list)  
+
+operator.setitem(my_dict, 'c', 3)   # my_dict['c'] = 3
+print("Updated dictionary after setitem:", my_dict)  
+
+operator.delitem(my_dict, 'b')      # del my_dict['b']
+print("Updated dictionary after delitem:", my_dict)  
+
+# Attribute access
+class MyClass:
+    def __init__(self):
+        self.x = 10
+        self.y = 20
+
+    def display(self):
+        return f"x: {self.x}, y: {self.y}"
+
+obj = MyClass()
+
+# Accessing attribute
+print("Access attribute x:", operator.attrgetter('x')(obj))  
+
+# Setting attribute
+operator.setattr(obj, 'x', 100)
+print("Updated attribute x:", operator.attrgetter('x')(obj))  
+# Deleting attribute
+operator.delattr(obj, 'y')
+print("Attributes after delattr:", hasattr(obj, 'y'))  
+
+# Method calling
+print("Calling method display:", operator.methodcaller('display')(obj))  
+
+# Itemgetter with multiple indices
+get_items = operator.itemgetter(0, 2)
+print("Get items at indices 0 and 2 from my_list:", get_items([1, 2, 3, 4, 5])) 
+# Difference between == and is operator in Python
+# == Operator (Equality Operator)
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a == b) 
+# is Operator (Identity Operator)
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a is b)
+# Python Membership and Identity Operators
+# Membership Operators
+# in Operator
+my_list = [1, 2, 3, 4, 5]
+
+print(3 in my_list) 
+print(10 in my_list)
+#   not in Operator
+my_string = "hello world"
+
+print("hello" in my_string)     
+print("world" not in my_string)
+#  Identity Operators
+# is Operator
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print(a is b) 
+print(a is c)
+# is not Operator
+x = [4, 5, 6]
+y = [4, 5, 6]
+
+print(x is not y) 
+
+z = y
+
+print(y is not z) 
+# Python Data  | Set 3 (Strings, Lists, Tuples, Iterations
+# Single value
+value = 42
+
+# String operations
+my_string = "Python"
+print("String Operations:")
+print("Original String:", my_string)
+print("Access first character:", my_string[0])  # 'P'
+print("Slice (first 4 characters):", my_string[:4])  # 'Pyth'
+print("Uppercase:", my_string.upper())  # 'PYTHON'
+print("Split into list:", my_string.split('t'))  # ['Py', 'hon']
+print()
+
+# List operations
+my_list = [value, value + 1, value + 2]
+print("List Operations:")
+print("Original List:", my_list)
+print("Access first element:", my_list[0])  # 42
+print("Slice (first two elements):", my_list[:2])  # [42, 43]
+my_list.append(value + 3)
+print("List after append:", my_list)  # [42, 43, 44, 45]
+my_list.remove(value + 1)
+print("List after remove:", my_list)  # [42, 44, 45]
+print()
+
+# Tuple operations
+my_tuple = (value, value + 1, value + 2)
+print("Tuple Operations:")
+print("Original Tuple:", my_tuple)
+print("Access first element:", my_tuple[0])  # 42
+print("Slice (first two elements):", my_tuple[:2])  # (42, 43)
+print("Count of 42:", my_tuple.count(value))  # 1
+print("Index of 43:", my_tuple.index(value + 1))  # 1
+print()
+
+# Iteration examples
+print("Iterations:")
+print("Iterating over string:")
+for char in my_string:
+    print(char, end=' ')
+print()
+
+print("Iterating over list:")
+for item in my_list:
+    print(item, end=' ')
+print()
+
+print("Iterating over tuple:")
+for item in my_tuple:
+    print(item, end=' ')
+print()
+
+print("Enumerating over list:")
+for index, item in enumerate(my_list):
+    print(f"Index: {index}, Value: {item}")
+
+print("Zipping two lists:")
+list1 = [value, value + 1, value + 2]
+list2 = ['a', 'b', 'c']
+for num, char in zip(list1, list2):
+    print(f"Number: {num}, Character: {char}")
